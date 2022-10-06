@@ -5,6 +5,7 @@ import { StyleSheet } from 'react-nativescript';
 import { FrameNavigationProp } from 'react-nativescript-navigation';
 
 import { MainStackParamList } from '../NavigationParamList';
+import { WeatherByCityService } from '../WeatherByCity';
 
 type ScreenOneProps = {
   route: RouteProp<MainStackParamList, 'One'>;
@@ -12,6 +13,7 @@ type ScreenOneProps = {
 };
 
 export function ScreenOne({ navigation }: ScreenOneProps) {
+  WeatherByCityService.addACityWeather();
   return (
     <flexboxLayout style={styles.container}>
       <label>Bienvenue sur le TP</label>

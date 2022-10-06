@@ -18,17 +18,13 @@ export function ScreenTwo({ navigation, route }: ScreenTwoProps) {
     route.params.ville
   );
   return (
-    <flexboxLayout>
+    <flexboxLayout style={styles.container}>
       <label>Météo {route.params.ville}</label>
-      <image src={LinksIconWeather[grenoble.icon]} />
-      <label>
-        {' '}
-        {grenoble.date} {grenoble.temperature}°C {grenoble.vent}km/h humidité :{' '}
-        {grenoble.humidité}%{' '}
-      </label>
-      <label></label>
-
-      <button onTap={() => navigation.goBack()}>Go back</button>
+      <image src={LinksIconWeather[grenoble?.icon]} />
+      <label>{grenoble.temperature + '°C '}</label>
+      <label>{grenoble.vent + ' km/h humidité : '}</label>
+      <label>{grenoble.humidité + '%'}</label>
+      <button onTap={() => navigation.navigate('One')}>Go back</button>
     </flexboxLayout>
   );
 }
