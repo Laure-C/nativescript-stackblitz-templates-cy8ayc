@@ -6,4 +6,7 @@ export type MainStackParamList = {
   Two: {
     ville: string;
   };
+  Information: {
+    message: string;
+  };
 };

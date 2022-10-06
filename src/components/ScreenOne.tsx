@@ -18,6 +18,15 @@ export function ScreenOne({ navigation }: ScreenOneProps) {
     <flexboxLayout style={styles.container}>
       <label>Bienvenue sur le TP</label>
       <label>React NativeScript</label>
+      <button
+        onTap={() =>
+          navigation.navigate('Information', {
+            message: 'Bravo vous savez cliquer',
+          })
+        }
+      >
+        Changement de page
+      </button>
       <button onTap={() => navigation.navigate('Two', { ville: 'Grenoble' })}>
         Météo Grenoble
       </button>

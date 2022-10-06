@@ -4,6 +4,7 @@ import { stackNavigatorFactory } from 'react-nativescript-navigation';
 
 import { ScreenOne } from './ScreenOne';
 import { ScreenTwo } from './ScreenTwo';
+import { Information } from './Information';
 
 const StackNavigator = stackNavigatorFactory();
 
@@ -18,8 +19,27 @@ export const MainStack = () => (
         headerShown: true,
       }}
     >
-      <StackNavigator.Screen name="Accueil" component={ScreenOne} />
-      <StackNavigator.Screen name="Météo Grenoble" component={ScreenTwo} />
+      <StackNavigator.Screen
+        name="One"
+        component={ScreenOne}
+        options={{
+          title: 'Accueil',
+        }}
+      />
+      <StackNavigator.Screen
+        name="Two"
+        component={ScreenTwo}
+        options={{
+          title: 'Météo Grenoble',
+        }}
+      />
+      <StackNavigator.Screen
+        name="Information"
+        component={Information}
+        options={{
+          title: 'Information',
+        }}
+      />
     </StackNavigator.Navigator>
   </BaseNavigationContainer>
 );
