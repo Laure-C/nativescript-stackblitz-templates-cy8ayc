@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-nativescript';
 import { FrameNavigationProp } from 'react-nativescript-navigation';
 
 import { MainStackParamList } from '../NavigationParamList';
+import { LinksIconWeather } from '../LinksIconWeather';
 
 type ScreenThreeProps = {
   route: RouteProp<MainStackParamList, 'Information'>;
@@ -14,6 +15,7 @@ export function Information({ navigation, route }: ScreenThreeProps) {
   return (
     <flexboxLayout style={styles.container}>
       <label>{route.params.message}</label>
+      <image src={LinksIconWeather.clearNight} />
       <button onTap={() => navigation.navigate('One')}>Retour</button>
     </flexboxLayout>
   );
