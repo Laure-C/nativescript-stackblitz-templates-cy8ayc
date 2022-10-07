@@ -4,14 +4,14 @@
 
 ### Exercice
 - Créer un bouton dans l'accueil
-- Ajouter un nouveau fichier tsx (vous pouvez vous insipirez de Information.tsx)
+- Ajouter un nouveau fichier tsx (vous pouvez vous insipirer de Information.tsx)
 - Lier le bouton au tsx
 - Afficher la météo de Grenoble
   - Nom ville
   - Image/Icon
   - Température
   - Vent
-  - Humidté
+  - Humidité
   - Bouton retour accueil 
 
 ### Exercice Supplémentaire
