@@ -15,7 +15,7 @@ export function Information({ navigation, route }: ScreenThreeProps) {
   return (
     <flexboxLayout style={styles.container}>
       <label>{route.params.message}</label>
-      <image src={LinksIconWeather.clearNight} />
+      <image src={LinksIconWeather.woaw} />
       <button onTap={() => navigation.navigate('One')}>Retour</button>
     </flexboxLayout>
   );

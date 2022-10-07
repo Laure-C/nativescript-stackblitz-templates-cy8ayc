@@ -8,4 +8,5 @@ export const LinksIconWeather = {
   rain: 'https://cdn-icons-png.flaticon.com/512/4834/4834677.png',
   sleet: 'https://cdn-icons-png.flaticon.com/512/3093/3093432.png',
   wind: 'https://cdn-icons-png.flaticon.com/512/4005/4005767.png',
+  woaw: 'https://media.discordapp.net/attachments/521741775082094612/1027893322339057691/unknown.png',
 };
