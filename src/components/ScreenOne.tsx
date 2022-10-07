@@ -27,9 +27,6 @@ export function ScreenOne({ navigation }: ScreenOneProps) {
       >
         Changement de page
       </button>
-      <button onTap={() => navigation.navigate('Two', { ville: 'Grenoble' })}>
-        Météo Grenoble
-      </button>
     </flexboxLayout>
   );
 }
