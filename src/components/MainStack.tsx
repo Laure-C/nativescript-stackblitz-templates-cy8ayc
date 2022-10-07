@@ -3,7 +3,6 @@ import * as React from 'react';
 import { stackNavigatorFactory } from 'react-nativescript-navigation';
 
 import { ScreenOne } from './ScreenOne';
-import { ScreenTwo } from './ScreenTwo';
 import { Information } from './Information';
 
 const StackNavigator = stackNavigatorFactory();
@@ -24,13 +23,6 @@ export const MainStack = () => (
         component={ScreenOne}
         options={{
           title: 'Accueil',
-        }}
-      />
-      <StackNavigator.Screen
-        name="Two"
-        component={ScreenTwo}
-        options={{
-          title: 'Météo Grenoble',
         }}
       />
       <StackNavigator.Screen
